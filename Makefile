@@ -8,3 +8,6 @@ deploy-testnet:
 
 deploy-local:
 	@bash -c 'source .env && forge script --rpc-url $${RPC_URL_LOCAL} --private-key $${PRIVATE_KEY} script/Wallet.s.sol:WalletScript --broadcast'
+
+run-test:
+	forge test
